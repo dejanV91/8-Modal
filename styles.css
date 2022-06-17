@@ -1,0 +1,80 @@
+/* import for fonts */
+@import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap");
+
+:root{
+    --fontPrimary: 'Corben', cursive;
+    --transition: 0.2s linear;
+    --colorBack: rgba(216, 252, 215, 0.867); 
+    --colorPrimary: #0b7935;
+    --radius: 7px;
+    --colorWhite: #fff;
+}
+
+html{
+    font-size: 16px;
+    font-family: var(--fontPrimary);
+}
+
+body{
+    min-width: 100vw;
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.hiddenContainer{
+    display: none;
+}
+
+.main-section{
+    min-height: 100%;
+    position: absolute;
+    min-width: 100%;
+    display: grid;
+    place-items: center;
+    background-image: url("/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    background-color:var(--colorWhite);
+    width: 50%;
+    max-width: 900px;
+    padding: 40px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: var(--radius);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+                 rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#titleModal{
+    font-size: 2.5em;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    padding: 0 40px;
+    white-space: nowrap;
+    color: rgb(63, 63, 63);
+}
+
+#modalBtn{
+    background-color: var(--colorPrimary);
+    border: 2px solid var(--colorPrimary);
+    padding: 5px 10px;
+    font-size: .9em;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--colorWhite);
+    transition: var(--transition);
+}
+
+#modalBtn:hover{
+    background-color: var(--colorWhite);
+    color: var(--colorPrimary);
+    cursor: pointer;
+}
